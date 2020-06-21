@@ -1,9 +1,23 @@
+<<<<<<< HEAD
+=======
+var my robot;
+
+function preload(){
+  song1 = loadSound('sounds/assets/donkey.mp3')
+}
+
+>>>>>>> a97a7ba8465df58e9979bd8c77629274f23fc797
 function setup() {
   createCanvas(400, 500);
 }
 
 function draw() {
   background(220);
+<<<<<<< HEAD
+=======
+  song1.play()
+}
+>>>>>>> a97a7ba8465df58e9979bd8c77629274f23fc797
 
   //rectagular center mode
   rectMode(CENTER);
