@@ -159,9 +159,6 @@ function draw() {
      text('Tooth                                      mouth', 40, 190);
      text('pointed                                    benefit', 20, 400);
 
-
-
-
      break;
 
     case 2:
@@ -225,7 +222,7 @@ function draw() {
      ellipse( 600, 0, 200, 200);
      fill(random(255), random(255), random(255));
      ellipse(600, 0, 160, 160);
-
+     //text
      fill(random(255), random(255), random(255));
      strokeWeight(2);
      stroke(0);
