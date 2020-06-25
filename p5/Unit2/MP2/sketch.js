@@ -222,7 +222,7 @@ function draw() {
      ellipse( 600, 0, 200, 200);
      fill(random(255), random(255), random(255));
      ellipse(600, 0, 160, 160);
-     //text
+
      fill(random(255), random(255), random(255));
      strokeWeight(2);
      stroke(0);
