@@ -171,7 +171,7 @@ function draw() {
 
      fill(255);
      arc(295, 300, 300, 330, QUARTER_PI/2, PI*7/8);
-
+     //hair
      fill(220, 20, 60);
      arc(150, 150, 440, 225, QUARTER_PI/8, HALF_PI, PIE);
 
