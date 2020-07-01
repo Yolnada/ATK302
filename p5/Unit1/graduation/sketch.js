@@ -15,6 +15,7 @@ function draw() {
     background(0, 25);
     fill('red')
   textSize(25);
+  text('王海强 :',120,120);
   text('最敬爱的班助理，祝你毕业快乐', 180, 200);
   text('前程似锦，不负韶华，熠熠生辉', 180, 300);
     if (random(1) < 0.1) {
