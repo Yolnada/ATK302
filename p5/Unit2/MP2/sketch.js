@@ -239,6 +239,8 @@ function mouseReleased(){
   if(state > 2){
     state = 0;
     song1.stop();
+
+
   }
 
 }
