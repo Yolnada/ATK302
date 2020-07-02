@@ -74,7 +74,7 @@ function draw() {
   fill('white');
   textSize(80);
   textAlign(CENTER);
-  text("straeberry",width/2,600,windowWidth - 200,windowHeight - 200);
+  text("Stitch",width/2,600,windowWidth - 200,windowHeight - 200);
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
   // textAlign(LEFT);
