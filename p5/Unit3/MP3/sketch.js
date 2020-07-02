@@ -4,19 +4,16 @@ let state = -1;
 let timer = 0 ;
 let bg1, bg2, bg3;
 let img1,img2,img3,img4,img5,img6,img7;
-let song1, song2, song3;
+let song1;
 
-function prload(){
-  song1 = loadSound('assets/sounds/1start.mp3');
-  song1 = loadSound('assets/sounds/2game.mp3');
-  song1 = loadSound('assets/sounds/3win.mp3');
+function preload(){
+  song1 = loadSound('assets/sounds/donkey.mp3');
+
 
   song1.loop();
-  song2.loop();
-  song3.loop();
+
   song1.pause();
-  song2.pause();
-  song3.pause();
+
 }
 
 
@@ -34,9 +31,8 @@ function setup() {
   img6 = loadImage('assets/images/win.png');
   img7 = loadImage('assets/images/lose.png');
 
-  song1 = loadSound('assets/sounds/1start.mp3');
-  song2 = loadSound('assets/sounds/2game.mp3');
-  song3 = loadSound('assets/sounds/3win.mp3');
+  song1 = loadSound('assets/sounds/donkey.mp3');
+
 
 
 frogPos = createVector(width/2, height-120);
@@ -55,6 +51,7 @@ function draw () {
 switch(state){
    case -1:
    song1.play();
+   state = 0;
 
    break;
 
@@ -198,7 +195,6 @@ function game() {
 
 
    }
-
    function touchStarted() {
   getAudioContext().resume();
 }
