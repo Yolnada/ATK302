@@ -7,20 +7,26 @@ var z = 0;
 let img1 ;
 let img2 ;
 let cars = [] ;
+let f;
 
 // other variables
-
+var bunnyImage;
+function preload() {
+  f = loadFont("assets/Zetafonts - AristaPro-Fat.otf")
+}
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
   img1 = loadImage("assets/bg.jpg") ;
-  img2 = loadImage("assets/Strawberry.png") ;
+  img2 = loadImage("assets/bubles.png") ;
 
   // initialize accelerometer variables
   alpha = 0;
   beta = 0;
   gamma = 0;
+
+  textFont(f);
 
 for (var l = 0;l < 30;l++){
   cars.push(new Car());
@@ -38,7 +44,7 @@ frogPos = createVector(width / 2,height -80);
 
 function draw() {
 
-  background('#c6f5fe'); // light blue
+  //background('#c6f5fe'); // light blue
   image(img1,width/2,height/2,width,height) ;
 
   // the map command !!!!
@@ -71,10 +77,10 @@ function draw() {
    }
   }
 
-  fill('white');
+  fill(0,191,255);
   textSize(80);
   textAlign(CENTER);
-  text("Strawberry",width/2,600,windowWidth - 200,windowHeight - 200);
+  text("hubble-bubble",width/2,600,windowWidth - 200,windowHeight - 200);
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
   // textAlign(LEFT);
