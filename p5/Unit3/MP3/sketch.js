@@ -12,7 +12,7 @@ function preload(){
 
   song1.loop();
 
-  song1.pause();
+//  song1.pause();
 
 }
 
@@ -25,13 +25,13 @@ function setup() {
 
   img1 = loadImage('assets/images/money.png');
   img2 = loadImage('assets/images/Gun.png');
-  img3 = loadImage('assets/images/yes or no.png');
+  img3 = loadImage('assets/images/yesorno.png');
   img4 = loadImage('assets/images/wlcome2.png');
   img5 = loadImage('assets/images/welcome3.png');
   img6 = loadImage('assets/images/win.png');
   img7 = loadImage('assets/images/lose.png');
 
-  song1 = loadSound('assets/sounds/donkey.mp3');
+
 
 
 
@@ -52,11 +52,10 @@ switch(state){
    case -1:
    song1.play();
    state = 0;
-
    break;
 
    case 0:
-   image(bg1,0, height-430); //put an image here later
+   image(bg1,0, 0); //put an image here later
    image(img3, 150, 120);
    image(img4, 150, 200);
    image(img5, 400, 300);
