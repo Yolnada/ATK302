@@ -78,7 +78,7 @@ function draw() {
   }
 
   fill(0,191,255);
-  textSize(80);
+  textSize(60);
   textAlign(CENTER);
   text("hubble-bubble",width/2,600,windowWidth - 200,windowHeight - 200);
   // DECORATIONS
