@@ -44,7 +44,7 @@ frogPos = createVector(width / 2,height -80);
 
 function draw() {
 
-  //background('#c6f5fe'); // light blue
+  background('#c6f5fe'); // light blue
   image(img1,width/2,height/2,width,height) ;
 
   // the map command !!!!
@@ -62,7 +62,7 @@ function draw() {
 
 
   // Here is where you can design this program!
-  image(img2,width/2,height/2,width,height) ;
+  image(bunnyImage, 0, 0, 150, 150) ;
   pop();
 
 
