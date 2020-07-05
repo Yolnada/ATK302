@@ -5,12 +5,14 @@ let timer = 0 ;
 let bg1, bg2, bg3;
 let img1,img2,img3,img4,img5,img6,img7;
 let song1;
+let f;
 
 function preload(){
   song1 = loadSound('assets/sounds/donkey.mp3');
 
 
   song1.loop();
+
 
 //  song1.pause();
 
@@ -32,6 +34,8 @@ function setup() {
   img7 = loadImage('assets/images/lose.png');
 
 
+  f = loadFont('assets/font/Somatic-Rounded.otf');
+
 
 
 
@@ -46,7 +50,7 @@ frogPos = createVector(width/2, height-120);
 
 function draw () {
 
-
+  textFont(f);
 
 switch(state){
    case -1:
@@ -59,7 +63,8 @@ switch(state){
    image(img3, 150, 120);
    image(img4, 150, 200);
    image(img5, 400, 300);
-   text("welcome to my game!", 150, 80);
+   textSize(40);
+   text("welcome to my game!", 110, 80);
    break;
 
    case 1: // game state
@@ -76,7 +81,8 @@ switch(state){
    image(bg3,0, height-430);
    image(img6, 220, 180);
    fill(0);
-   text("You Won!", 260, 200)
+   textSize(40);
+   text("You Won!", 220, 200)
 
    break;
 
@@ -84,7 +90,8 @@ switch(state){
    image(bg3,0, height-430);
    image(img7, 200, 160);
    fill(0)
-   text("Sorry you lost, try again", 230, 140);
+   textSize(40);
+   text("Sorry you lost, try again", 100, 140);
    break;
 
 }

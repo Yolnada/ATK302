@@ -5,20 +5,30 @@ var x = 0;
 var song1;
 var f;
 
+
 function preload(){
   song1 = loadSound('assets/skate.mp3');
-  f = loadFont('assets/Teddy.otf');
+
+
+  song1.loop();
+
+
 }
 
 function setup() {
   createCanvas(600,600);
-  song1.play();
+  f = loadFont('assets/Teddy.otf');
 }
 
 function draw() {
   textFont(f);
 
   switch(state){
+    case -1:
+    song1.play();
+    state = 0;
+    break;
+
     case 0:
      background(150, 50, 50);
 
@@ -243,4 +253,7 @@ function mouseReleased(){
 
   }
 
+}
+function touchStarted() {
+   getAudioContext().resume();
 }
